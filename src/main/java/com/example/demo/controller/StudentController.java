@@ -20,7 +20,7 @@ public class StudentController {
 
   @GetMapping("/{id}")
   public Student getStudent(@PathVariable UUID id) {
-    log.info("Recieved request to get student with id={}", id);
+    log.info("Received request to get student with id={}", id);
     return studentService.getStudent(id);
   }
 }
